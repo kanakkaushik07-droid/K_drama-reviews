@@ -2,19 +2,20 @@
 (main objective: learning text functions in R)
 
 ## 📌 Table of Contents
-- [K-Drama Dataset & Text Analysis](#k-drama-dataset--text-analysis-in-r)
-- [Dataset Creation](#k-drama-dataset-creation)
-- [Generating Comments](#generating-random-good--bad-comments)
-- [Adding Gender Column](#adding-gender-column)
-- [Adding Location Column](#adding-location-column)
-- [Adding Streaming Platform](#adding-streaming-platform)
-- [Adding Review Headlines](#adding-review-headlines)
-- [Adding Genre Column](#adding-genre-column)
-- [Text Manipulation](#text-manipulation-operations)
-- [Project Outcome](#project-outcome)
 
----
+- [📺 K DRAMA REVIEWS USING R PROGRAMMING](#-k-drama-reviews-using-r-programming)
+- [📌 K-Drama Dataset Generation & Text Analysis in R](#-k-drama-dataset-generation--text-analysis-in-r)
+- [📂 K-Drama Dataset Creation](#-k-drama-dataset-creation)
+- [💬 Generating Random Good & Bad Comments](#-generating-random-good--bad-comments)
+- [👤 Adding Gender Column](#-adding-gender-column)
+- [🌍 Adding Location Column](#-adding-location-column)
+- [🎬 Adding Streaming Platform](#-adding-streaming-platform)
+- [📝 Adding Review Headlines](#-adding-review-headlines)
+- [🎭 Adding Genre Column](#-adding-genre-column)
+- [🧠 Text Manipulation Operations](#-text-manipulation-operations)
+- [🚀 Project Outcome](#-project-outcome)
 
+  
 ## 📌 K-Drama Dataset Generation & Text Analysis in R
 
 This repository presents an R programming project that builds a synthetic dataset of popular K-Dramas and demonstrates a wide range of text manipulation and data wrangling techniques. The project generates a dataframe containing drama titles along with randomly created positive and negative user reviews, and enriches it with additional attributes such as reviewer gender, location, streaming platform, genre, and review headlines. It also applies multiple string-processing operations using base R and the stringr package, including case conversion, text combination, splitting, replacement, pattern detection, substring extraction, position detection, and formatting. The dataset is further enhanced with derived features like combined headlines, tokenized words, keyword counts, and masked text, making it a practical resource for learning data cleaning, feature engineering, and text analytics in R.
@@ -22,18 +23,19 @@ This repository presents an R programming project that builds a synthetic datase
 ---
 
 ## 📂 K-Drama Dataset Creation
-- [Dataset Creation](#dataset-creation)
+## Dataset Creation
+
 ```r
 kdrama_names <- data.frame(
   Drama = c(
     "Crash Landing on You", "Itaewon Class", "Vincenzo",
     "Descendants of the Sun", "Goblin", "Reply 1988",
     "Hospital Playlist", "Signal", "Kingdom"
-    # (truncated for readability)
   )
 )
 
 View(kdrama_names)
+
 ```
 
 using the kdrama_names dataframe generating random comments one badand one good comment for each kdrama entered above
